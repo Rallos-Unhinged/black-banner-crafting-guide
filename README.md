@@ -1,4 +1,4 @@
-[Index.HTML](https://github.com/user-attachments/files/28916791/Index.HTML)
+[Index.HTML](https://github.com/user-attachments/files/28916845/Index.HTML)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -855,6 +855,53 @@ footer {
   .hero-logo {
     width: min(280px, 72vw);
   }
+}
+
+
+/* ───────────────────────────────────────────────
+   READABILITY PATCH — DARK TABLES
+   Makes tables easier to read on the dark theme.
+   ─────────────────────────────────────────────── */
+table {
+  background: rgba(12, 10, 8, 0.96) !important;
+  border: 1px solid rgba(199,154,58,.45) !important;
+}
+
+thead tr {
+  background: #1b1409 !important;
+}
+
+thead th {
+  color: #f0cf73 !important;
+  background: #1b1409 !important;
+  border-bottom: 1px solid rgba(199,154,58,.65) !important;
+}
+
+tbody tr {
+  background: rgba(20, 18, 15, 0.94) !important;
+  border-bottom: 1px solid rgba(199,154,58,.22) !important;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(36, 30, 20, 0.94) !important;
+}
+
+tbody tr:hover {
+  background: rgba(70, 52, 24, 0.96) !important;
+}
+
+td {
+  color: #f3e6c6 !important;
+  background: transparent !important;
+}
+
+td strong {
+  color: #ffd36f !important;
+}
+
+.table-wrap {
+  background: rgba(0,0,0,.25);
+  border-radius: 2px;
 }
 
 </style>
