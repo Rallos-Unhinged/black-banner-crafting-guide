@@ -1,4 +1,4 @@
-[Index.HTML](https://github.com/user-attachments/files/28916845/Index.HTML)
+[Index.HTML](https://github.com/user-attachments/files/28916895/Index.HTML)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -858,50 +858,151 @@ footer {
 }
 
 
+
 /* ───────────────────────────────────────────────
-   READABILITY PATCH — DARK TABLES
-   Makes tables easier to read on the dark theme.
+   FINAL READABILITY PATCH — ALL TABLES / CHARTS
+   This patch is intentionally placed LAST in the style block.
+   It overrides light table/chart colors across the full guide.
    ─────────────────────────────────────────────── */
-table {
-  background: rgba(12, 10, 8, 0.96) !important;
-  border: 1px solid rgba(199,154,58,.45) !important;
+
+.table-wrap,
+.guide-section .table-wrap {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(199,154,58,.35) !important;
+  padding: 0 !important;
+  overflow-x: auto !important;
 }
 
-thead tr {
-  background: #1b1409 !important;
-}
-
-thead th {
-  color: #f0cf73 !important;
-  background: #1b1409 !important;
-  border-bottom: 1px solid rgba(199,154,58,.65) !important;
-}
-
-tbody tr {
-  background: rgba(20, 18, 15, 0.94) !important;
-  border-bottom: 1px solid rgba(199,154,58,.22) !important;
-}
-
-tbody tr:nth-child(even) {
-  background: rgba(36, 30, 20, 0.94) !important;
-}
-
-tbody tr:hover {
-  background: rgba(70, 52, 24, 0.96) !important;
-}
-
-td {
+table,
+.guide-section table,
+.content table,
+#main table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  background: #11100d !important;
+  border: 1px solid rgba(199,154,58,.5) !important;
   color: #f3e6c6 !important;
+}
+
+table thead,
+table thead tr,
+.guide-section table thead,
+.guide-section table thead tr,
+.content table thead,
+.content table thead tr,
+#main table thead,
+#main table thead tr {
+  background: #1f170b !important;
+  color: #f0c75e !important;
+}
+
+table thead th,
+.guide-section table thead th,
+.content table thead th,
+#main table thead th,
+th {
+  background: #1f170b !important;
+  color: #f0c75e !important;
+  border: 1px solid rgba(199,154,58,.45) !important;
+  border-bottom: 2px solid rgba(199,154,58,.75) !important;
+  text-shadow: none !important;
+}
+
+table tbody,
+.guide-section table tbody,
+.content table tbody,
+#main table tbody {
+  background: #11100d !important;
+}
+
+table tbody tr,
+.guide-section table tbody tr,
+.content table tbody tr,
+#main table tbody tr {
+  background: #181612 !important;
+  border-bottom: 1px solid rgba(199,154,58,.25) !important;
+}
+
+table tbody tr:nth-child(even),
+.guide-section table tbody tr:nth-child(even),
+.content table tbody tr:nth-child(even),
+#main table tbody tr:nth-child(even) {
+  background: #242016 !important;
+}
+
+table tbody tr:nth-child(odd),
+.guide-section table tbody tr:nth-child(odd),
+.content table tbody tr:nth-child(odd),
+#main table tbody tr:nth-child(odd) {
+  background: #181612 !important;
+}
+
+table tbody tr:hover,
+.guide-section table tbody tr:hover,
+.content table tbody tr:hover,
+#main table tbody tr:hover {
+  background: #352812 !important;
+}
+
+table td,
+.guide-section table td,
+.content table td,
+#main table td,
+td {
+  background: transparent !important;
+  color: #f3e6c6 !important;
+  border: 1px solid rgba(199,154,58,.20) !important;
+  text-shadow: none !important;
+}
+
+table td:first-child,
+.guide-section table td:first-child,
+.content table td:first-child,
+#main table td:first-child {
+  color: #ffe2a0 !important;
+}
+
+table td strong,
+.guide-section table td strong,
+.content table td strong,
+#main table td strong,
+td strong {
+  color: #ffd36f !important;
+  font-weight: 700 !important;
+}
+
+.rank-table,
+td.rank-table,
+.rank-table td:first-child {
+  color: #ffd36f !important;
   background: transparent !important;
 }
 
-td strong {
+/* Fix any charts/tables using inline or inherited pale colors */
+table *,
+.guide-section table *,
+.content table *,
+#main table * {
+  text-shadow: none !important;
+}
+
+/* Preserve useful gold keyword emphasis while improving contrast */
+td b,
+td em,
+td strong,
+tbody b,
+tbody em,
+tbody strong {
   color: #ffd36f !important;
 }
 
-.table-wrap {
-  background: rgba(0,0,0,.25);
-  border-radius: 2px;
+/* Extra safety for white/light cells from browser defaults */
+tr,
+tbody,
+thead,
+th,
+td {
+  box-shadow: none !important;
 }
 
 </style>
