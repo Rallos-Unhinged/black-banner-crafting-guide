@@ -1,5 +1,5 @@
-[Index.html](https://github.com/user-attachments/files/28916611/Index.html)
-# black-banner-crafting-guide<!DOCTYPE html>
+[Index.HTML](https://github.com/user-attachments/files/28916791/Index.HTML)
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -910,6 +910,7 @@ footer {
     <a href="#spell-crafting">Spell Material Crafting</a>
     <a href="#spell-trading">Spell Trading</a>
     <a href="#modifiers">Crafting Modifier Rulings</a>
+    <a href="#changelog">Changelog</a>
   </nav>
 </aside>
 
@@ -2471,6 +2472,33 @@ footer {
   <footer>
     Black Banner Company Crafting Guide v3.2.8 &nbsp;·&nbsp; Created by Hellbread &nbsp;·&nbsp; Edited by Ooxy &nbsp;·&nbsp; Last updated 6 June 2026
   </footer>
+
+
+<div class="guide-section" id="changelog">
+  <h2 class="sec-title">Changelog <span class="tag">Advanced</span></h2>
+  <div class="callout info">
+    <strong>Version History</strong>
+    This section records major updates, rulings, balance changes, and additions made to the Black Banner Company Crafting Guide.
+  </div>
+
+  <h3 class="sub-title">v3.2.8 (6/06/26)</h3>
+  <p>Herbalism gold requirements removed. Item Repair System added. Crafting Modifier Rulings updated.</p>
+
+  <h3 class="sub-title">v3.2.7 (5/31/26)</h3>
+  <p>Manifold Tool, Adroit Crafter, and Homunculus rulings updated for 2024 crafting rules.</p>
+
+  <h3 class="sub-title">v3.2.6 (3/02/26)</h3>
+  <p>Flight Arrow ranges adjusted. Mithril Arrows updated. Smithing and Glassblower weapons now convert all weapon damage to their Prime Material damage type.</p>
+
+  <h3 class="sub-title">v3.2.5 (2/01/26)</h3>
+  <p>Added custom ring options for Jewelcrafters.</p>
+
+  <h3 class="sub-title">v3.2.4 (7/14/25)</h3>
+  <p>Poisons can now be applied to exotic weapons. Added Malice Cube, Det-Caps, Potter's Wheel, and False Aura.</p>
+
+  <h3 class="sub-title">Legacy Changelog (v3.2.3 - v3.1.1)</h3>
+  <p>Previous historical updates retained from the original guide including Dragon Scale Mail changes, Pottery overhaul, Black Lotus, Voidblossom replacement, Spell Trading revisions, Artificer revisions, Deadwood, Ironwood, Summitwood, Spider Silk, Interdisciplinary Crafts, Exotic Shields, and numerous balance updates.</p>
+</div>
 
 </main>
 </body>
